@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="132.881">
+    <testcase classname="F01_Register | users could use register functionality to open new accounts" name="user could register with valid fristname and lastname and email and password and confirmPassword" time="11.394">
+        <system-out><![CDATA[Given user go to register page..............................................passed
+When user lregister with valid fristname and lastname and email and password and confirmPassword.passed
+And user press on register button...........................................passed
+Then user register to the system successfully...............................passed
+And user logout to login page...............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F02_Login | users could use login functionality to open their accounts" name="user could login with valid email and password" time="6.739">
+        <system-out><![CDATA[Given user go to login page.................................................passed
+When user login with valid email and password...............................passed
+Then user login to the system successfully..................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F03_RestPassword | users could use Rest password functionality" name="users could use Rest password with vaild email" time="6.957">
+        <system-out><![CDATA[Given user go to Rest page..................................................passed
+When user rest with valid email.............................................passed
+And user press on Recover button............................................passed
+Then user rest password successfully........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F02_Search | users will be able to search for products with different parameters" name="user could login with valid email and password" time="4.124">
+        <system-out><![CDATA[Given user go to login page before sreach...................................passed
+When user login  before search with valid email and password................passed
+Then user login to the system successfully before search....................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F02_Search | users will be able to search for products with different parameters" name="user could search for product using fullname" time="3.32">
+        <system-out><![CDATA[Given user clicks on search field...........................................passed
+When user search with name of product.......................................passed
+Then user could find relative results.......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F05_switch_between_currencies |  Logged User could switch between currencies US-Euro" name="user could switch between currencies" time="5.141">
+        <system-out><![CDATA[Given user in home page.....................................................passed
+When user detierment to Euro................................................passed
+Then user switch between currencies US-Euro successfully....................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F06_select_different_Categories |  Logged user could select different Categories" name="user could select different Categories" time="9.779">
+        <system-out><![CDATA[Given Logged user in home page..............................................passed
+When user detierment to Categories and Hover to sub_Categories..............passed
+Then Click on sub categories successfully...................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F07_filter_with_colorfeature |  Logged user could filter with color" name="user could filter with color" time="1.851">
+        <system-out><![CDATA[Given Logged user in home page to Filter....................................passed
+When user determined to Categories like Apparel > Shoes.....................passed
+And Filter with blue color..................................................passed
+Then filtertion successfully................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F09_AddShoppingcart |  Logged user could add different products to Shopping cart" name="_2" time="19.277">
+        <system-out><![CDATA[Given Logged user could add different products to Shopping cart.............passed
+When user add Frist products to Shopping cart...............................passed
+And assert shopping cart have Frist product.................................passed
+Then user add Scoend products to Shopping cart..............................passed
+And assert shopping cart have Scoend product................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F10_AddWishlistcart | Logged user could add different products to Wishlist" name="_2" time="10.321">
+        <system-out><![CDATA[Given Logged user could add different products to Wishlist cart.............passed
+When user add Frist products to Wishlist cart...............................passed
+And user add Scoend products to Wishlist cart...............................passed
+Then assert Wishlist cart have two product..................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F11_Addtocomparecart | Logged user could add different products to compare list" name="could add different products to compare list" time="8.493">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@data-productid='38']&quot;}&#10;  (Session info: chrome=100.0.4896.127)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'DESKTOP-SJVPH3A', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [afd3b344c9ce308c09f985ffe6ae742e, findElement {using=xpath, value=//div[@data-productid='38']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\W10\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:52365}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52365/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: afd3b344c9ce308c09f985ffe6ae742e" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Logged user could add different products to compare cart..............passed
+When user add Frist products to compare cart................................failed
+And user add Scoend products to compare cart................................skipped
+Then assert compare cart have two product...................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-productid='38']"}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-SJVPH3A', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [afd3b344c9ce308c09f985ffe6ae742e, findElement {using=xpath, value=//div[@data-productid='38']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\W10\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:52365}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52365/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: afd3b344c9ce308c09f985ffe6ae742e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at com.automation.pages.CompareListCartPage.addFristproducte(CompareListCartPage.java:20)
+	at com.automation.step_definitions.AddProductToCompareCartStepDefinition.user_add_frist_products_to_compare_cart(AddProductToCompareCartStepDefinition.java:20)
+	at ✽.user add Frist products to compare cart(file:///F:/FWD_automationProject/src/main/resources/features/F11_Addtocomparecart.feature:7)
+]]></failure>
+    </testcase>
+    <testcase classname="F12CreatesuccessfulOrder | Create successful Order" name="User Can Create Syccessful Order" time="1.293">
+        <failure message="element click intercepted: Element &lt;li id=&quot;topcartlink&quot;&gt;...&lt;/li&gt; is not clickable at point (1090, 22). Other element would receive the click: &lt;p class=&quot;content&quot;&gt;...&lt;/p&gt;&#10;  (Session info: chrome=100.0.4896.127)&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'DESKTOP-SJVPH3A', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [afd3b344c9ce308c09f985ffe6ae742e, clickElement {id=77eda0bd-0bff-441c-b901-495e8481b369}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\W10\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:52365}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52365/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (afd3b344c9ce308c09f985ffe6ae742e)] -&gt; id: topcartlink]&#10;Session ID: afd3b344c9ce308c09f985ffe6ae742e" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[Given User Go to Shopping cart..............................................failed
+When user Complete Data to create order.....................................skipped
+Then assert user created order successful...................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <li id="topcartlink">...</li> is not clickable at point (1090, 22). Other element would receive the click: <p class="content">...</p>
+  (Session info: chrome=100.0.4896.127)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-SJVPH3A', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [afd3b344c9ce308c09f985ffe6ae742e, clickElement {id=77eda0bd-0bff-441c-b901-495e8481b369}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\W10\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:52365}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52365/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (afd3b344c9ce308c09f985ffe6ae742e)] -> id: topcartlink]
+Session ID: afd3b344c9ce308c09f985ffe6ae742e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.automation.pages.CheckOutPage.GotoCart(CheckOutPage.java:69)
+	at com.automation.step_definitions.CreateOrderStepDefinition.user_got_to_shopping_cart(CreateOrderStepDefinition.java:13)
+	at ✽.User Go to Shopping cart(file:///F:/FWD_automationProject/src/main/resources/features/F12CreatesuccessfulOrder.feature:6)
+]]></failure>
+    </testcase>
+</testsuite>

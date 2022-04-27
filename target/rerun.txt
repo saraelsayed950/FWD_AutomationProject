@@ -1,0 +1,2 @@
+file:src/main/resources/features/F11_Addtocomparecart.feature:5
+file:src/main/resources/features/F12CreatesuccessfulOrder.feature:5
